@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <ScrollView
+        android:id="@+id/writing_scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/writing_logo_image"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                app:srcCompat="@drawable/logo01" />
+
+            <EditText
+                android:id="@+id/edit_text_festival_name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="축제 이름" />
+
+            <EditText
+                android:id="@+id/edit_text_location"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="위치" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/choice_period"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="기간 선택" />
+
+                <TextView
+                    android:id="@+id/text_period_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="기간을 선택해주세요"/>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radio_group_price"
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_free"
+                        android:layout_width="80dp"
+                        android:layout_height="48dp"
+                        android:text="무료" />
+
+                    <RadioButton
+                        android:id="@+id/radio_charged"
+                        android:layout_width="80dp"
+                        android:layout_height="48dp"
+                        android:text="유료" />
+
+                    <EditText
+                        android:id="@+id/edit_text_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="(ex. 5000)"/>
+                </LinearLayout>
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/edit_text_introduction"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:hint="축제 소개" />
+
+            <EditText
+                android:id="@+id/edit_text_information"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:hint="이용안내" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="end">
+
+                <Button
+                    android:id="@+id/button_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="취소하기" />
+
+                <Button
+                    android:id="@+id/button_writing_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="작성하기" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

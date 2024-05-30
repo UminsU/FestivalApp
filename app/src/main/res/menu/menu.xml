@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--하단 메뉴 바 구성 정의-->
+    <item
+        android:id="@+id/btn_dashboard"
+        android:icon="@drawable/board02"
+        android:title="@string/board" />
+
+    <item
+        android:id="@+id/btn_notifications"
+        android:icon="@drawable/rec02"
+        android:title="@string/rec" />
+
+    <item
+        android:id="@+id/btn_home"
+        android:icon="@drawable/main02"
+        android:checked="true"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/btn_Fal"
+        android:icon="@drawable/fal02"
+        android:title="@string/like" />
+
+    <item
+        android:id="@+id/btn_mypage"
+        android:icon="@drawable/myp02"
+        android:title="@string/mapage" />
+</menu>

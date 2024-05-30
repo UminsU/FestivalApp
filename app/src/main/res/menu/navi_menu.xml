@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--상단 메뉴창 - 네비 메뉴 정의-->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/side_mypage_button"
+            android:title="마이페이지"/>
+
+        <item
+            android:id="@+id/side_board_button"
+            android:title="게시판"/>
+
+        <item
+            android:id="@+id/side_reivew_button"
+            android:title="내 리뷰"/>
+
+        <item
+            android:id="@+id/empty_space1"
+            android:enabled="false"
+            android:title=""
+            android:layout="@layout/empty_space_layout"/>
+
+        <item
+            android:id="@+id/side_write_button"
+            android:title="글 작성하기"/>
+
+        <item
+            android:id="@+id/empty_space2"
+            android:enabled="false"
+            android:title=""
+            android:layout="@layout/empty_space_layout"/>
+        <item
+            android:id="@+id/side_login_button"
+            android:title="로그인"/>
+
+        <item
+            android:id="@+id/side_logout_button"
+            android:title="로그아웃"
+            android:enabled="false"/>
+
+    </group>
+</menu>

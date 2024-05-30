@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">헤쳐모여</string>
+    <string name="nav_header_desc" />
+    <string name="board">게시판</string>
+    <string name="rec">추천</string>
+    <string name="home">홈</string>
+    <string name="like">찜</string>
+    <string name="mapage">마이페이지</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="default_web_client_id">your_web_client_id_here</string>
+</resources>

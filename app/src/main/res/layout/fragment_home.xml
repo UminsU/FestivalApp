@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/browser_actions_bg_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <!--검색뷰-->
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="5dp"
+                app:iconifiedByDefault="false"
+                app:queryHint="찾고 싶은 행사를 입력하시오"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <!--텍스트 뷰-->
+            <TextView
+                android:id="@+id/month_fes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/cookie"
+                android:textColor="#202020"
+                android:textSize="20dp"
+                android:text="이번달 주요 축제" />
+            <!--행사 배너 뷰1 / DB에서 이미지 가져오기-->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/month_fes_page"
+                android:layout_width="300dp"
+                android:layout_height="152dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:background="#FFFFFF" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <!--행사 배너 뷰2 / DB에서 행사명 가져오기-->
+            <TextView
+                android:id="@+id/month_fes_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/round"
+                android:textColor="#202020"
+                android:text="축제 이름" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <!--텍스트뷰-->
+            <TextView
+                android:id="@+id/place_fes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/cookie"
+                android:textColor="#202020"
+                android:textSize="20dp"
+                android:text="우리 동네 구석구석" />
+            <!--행사 배너 뷰3 / DB에서 이미지 가져오기-->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/place_fes_page"
+                android:layout_width="300dp"
+                android:layout_height="164dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:background="#FFFFFF" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <!--행사 배너 뷰4 / DB에서 행사명 가져오기-->
+            <TextView
+                android:id="@+id/place_fes_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/round"
+                android:textColor="#202020"
+                android:text="축제 이름" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
