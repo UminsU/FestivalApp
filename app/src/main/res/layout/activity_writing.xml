@@ -14,8 +14,10 @@
         android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,13 +53,16 @@
                     android:id="@+id/choice_period"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="기간 선택" />
+                    android:backgroundTint="#ff7171"
+                    android:fontFamily="@font/round"
+                    android:text="기간 선택"
+                    android:textColor="#F1F1F1" />
 
                 <TextView
                     android:id="@+id/text_period_show"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="기간을 선택해주세요"/>
+                    android:hint="기간을 선택해주세요" />
 
             </LinearLayout>
 
@@ -88,7 +93,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:hint="(ex. 5000)"/>
+                        android:hint="(ex. 5000)" />
                 </LinearLayout>
 
             </RadioGroup>
@@ -108,20 +113,26 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:gravity="end">
+                android:gravity="end"
+                android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/button_cancel"
                     android:layout_width="wrap_content"
                     android:layout_height="48dp"
-                    android:text="취소하기" />
+                    android:backgroundTint="#FF7171"
+                    android:fontFamily="@font/round"
+                    android:text="취소하기"
+                    android:textColor="#F1F1F1" />
 
                 <Button
                     android:id="@+id/button_writing_out"
                     android:layout_width="wrap_content"
                     android:layout_height="48dp"
-                    android:text="작성하기" />
+                    android:backgroundTint="#FF7171"
+                    android:fontFamily="@font/round"
+                    android:text="작성하기"
+                    android:textColor="#F1F1F1" />
 
             </LinearLayout>
         </LinearLayout>

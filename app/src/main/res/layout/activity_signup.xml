@@ -26,45 +26,48 @@
                 android:id="@+id/edit_text_id2"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="ID" />
+                android:hint="아이디" />
 
             <Button
                 android:id="@+id/button_check_id"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:text="Check ID" />
+                android:backgroundTint="#FF7171"
+                android:fontFamily="@font/round"
+                android:text="중복확인"
+                android:textColor="#FFFFFF" />
 
             <EditText
                 android:id="@+id/edit_text_password2"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="Password"
+                android:hint="비밀번호"
                 android:inputType="textPassword" />
 
             <EditText
                 android:id="@+id/edit_text_confirm_password"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="Confirm Password"
+                android:hint="비밀번호 재입력"
                 android:inputType="textPassword" />
 
             <EditText
                 android:id="@+id/edit_text_name"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="Name" />
+                android:hint="이름" />
 
             <EditText
                 android:id="@+id/edit_text_phone"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="Phone" />
+                android:hint="전화번호" />
 
             <EditText
                 android:id="@+id/edit_text_birthdate"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="Birthdate" />
+                android:hint="생년월일" />
 
             <RadioGroup
                 android:id="@+id/radio_group_gender"
@@ -80,13 +83,13 @@
                         android:id="@+id/radio_female"
                         android:layout_width="80dp"
                         android:layout_height="48dp"
-                        android:text="Female" />
+                        android:text="여성" />
 
                     <RadioButton
                         android:id="@+id/radio_male"
                         android:layout_width="80dp"
                         android:layout_height="48dp"
-                        android:text="Male" />
+                        android:text="남성" />
                 </LinearLayout>
 
             </RadioGroup>
@@ -95,7 +98,10 @@
                 android:id="@+id/button_register"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:text="Register" />
+                android:backgroundTint="#ff7171"
+                android:fontFamily="@font/round"
+                android:text="회원가입"
+                android:textColor="#FDFDFD" />
 
         </LinearLayout>
 
