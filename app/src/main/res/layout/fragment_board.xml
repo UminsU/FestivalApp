@@ -23,7 +23,7 @@
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="5dp"
             app:iconifiedByDefault="false"
-            app:queryHint="찾고 싶은 행사를 입력하시오"/>
+            />
 
 
         <LinearLayout
@@ -36,9 +36,10 @@
                 android:id="@+id/keyward_button"
                 android:layout_width="70dp"
                 android:layout_height="48dp"
-                android:backgroundTint="@color/pink"
-                android:text="키워드" />
-
+                android:backgroundTint="#F6B3C9"
+                android:fontFamily="@font/cookie"
+                android:text="키워드"
+                android:textColor="#FFFFFF" />
             <TextView
                 android:id="@+id/board_textView"
                 android:layout_width="match_parent"
@@ -67,28 +68,28 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="1" />
+                    android:text="봄" />
 
                 <Button
                     android:id="@+id/button_keyword_2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="2" />
+                    android:text="여름" />
 
                 <Button
                     android:id="@+id/button_keyword_3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="3" />
+                    android:text="커플" />
 
                 <Button
                     android:id="@+id/button_keyword_4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="4" />
+                    android:text="전통" />
 
             </LinearLayout>
             <LinearLayout
@@ -102,28 +103,28 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="문화예술" />
 
                 <Button
                     android:id="@+id/button_keyword_6"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="꽃" />
 
                 <Button
                     android:id="@+id/button_keyword_7"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="눈이 즐거운" />
 
                 <Button
                     android:id="@+id/button_keyword_8"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="가족과 함께" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -136,28 +137,28 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="어린아이도 즐기는" />
 
                 <Button
                     android:id="@+id/button_keyword_10"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="체험가능한" />
 
                 <Button
                     android:id="@+id/button_keyword_11"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="20대에게 인기있는" />
 
                 <Button
                     android:id="@+id/button_keyword_12"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="풍경이 예쁜" />
             </LinearLayout>
         </LinearLayout>
 
@@ -172,6 +173,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:backgroundTint="@color/white"
+                android:fontFamily="@font/cookie"
                 android:text="최신순" />
 
             <Button
@@ -179,6 +181,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:backgroundTint="@color/white"
+                android:fontFamily="@font/cookie"
                 android:text="인기순" />
         </LinearLayout>
 
@@ -188,9 +191,8 @@
         android:id="@+id/rv_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
-        app:layout_constraintTop_toBottomOf="@id/layout_board_top"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="173dp" />
-
+        android:layout_marginTop="8dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="1"
+        app:layout_constraintTop_toBottomOf="@id/layout_board_top" />
 </androidx.constraintlayout.widget.ConstraintLayout>

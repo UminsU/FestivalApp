@@ -1,6 +1,7 @@
 package com.example.app
 
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Location
 import android.os.Bundle
@@ -47,7 +48,17 @@ class FragmentRec : Fragment(), OnMapReadyCallback {
         } else {
             ActivityCompat.requestPermissions(requireActivity(), arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), LOCATION_PERMISSION_REQUEST_CODE)
         }
+
+        googleMap.setOnMarkerClickListener { marker ->
+            val festivalId = "ptyrL2HdiSd8KWfSGSss" // 파이어베이스 문서의 ID
+            val intent = Intent(requireContext(), ReadBoardActivity::class.java)
+            intent.putExtra("festivalId", festivalId)
+            intent.putExtra("imageResId", R.drawable.samyook)
+            startActivity(intent)
+            true
+        }
     }
+
 
     private fun getCurrentLocation() {
         val fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireContext())
@@ -65,19 +76,14 @@ class FragmentRec : Fragment(), OnMapReadyCallback {
                             .strokeColor(0x5500FF00)
                             .fillColor(0x2200FF00)
                     )
-                    val fes1 = LatLng(37.643334,127.105853)
-                    val fes2 = LatLng(37.644166, 127.104513)
+                    val fes1 = LatLng(37.643334, 127.105853)
+                    val markerIcon = BitmapDescriptorFactory.fromResource(R.drawable.markericon)
                     googleMap.addMarker(
                         MarkerOptions()
                             .position(fes1)
-                            .title("축제1")
+                            .title("학교행사")
                             .icon(BitmapDescriptorFactory.defaultMarker(240f))
-                    )
-                    googleMap.addMarker(
-                        MarkerOptions()
-                            .position(fes2)
-                            .title("축제2")
-                            .icon(BitmapDescriptorFactory.defaultMarker(240f))
+                            .icon(markerIcon)
                     )
                     googleMap.uiSettings.isZoomControlsEnabled = true
                 } ?: run {

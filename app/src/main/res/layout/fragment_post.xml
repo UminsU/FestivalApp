@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 사진 -->
+    <ImageView
+        android:id="@+id/imageView_post"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fes2" />
+
+    <!-- 축제 이름 -->
+    <TextView
+        android:id="@+id/textView_festival_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="축제 이름"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- 축제 위치 -->
+    <TextView
+        android:id="@+id/textView_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="축제 위치"
+        android:textSize="16sp" />
+
+    <!-- 축제 소개 -->
+    <TextView
+        android:id="@+id/textView_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="축제 소개"
+        android:textSize="16sp" />
+
+    <!-- 이용 안내 -->
+    <TextView
+        android:id="@+id/textView_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="이용 안내"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -48,6 +48,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".BoardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReadBoardActivity"
+            android:exported="false" />
         <!--구글 광고 api명과 샘플코드-->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"

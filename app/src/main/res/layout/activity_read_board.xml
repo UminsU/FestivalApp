@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ReadBoardActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:background="@color/white"
+            android:layout_margin="8dp"
+            android:elevation="2dp"
+            android:clipToPadding="false">
+
+            <Button
+                android:id="@+id/readboard_backbutton"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_gravity="start"
+                android:background="@drawable/button_background"
+                android:text="돌아가기"
+                android:textColor="@color/white"
+                android:layout_marginBottom="16dp"/>
+            <Button
+                android:id="@+id/favorite_button"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="찜하기"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageView
+                android:id="@+id/readboard_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                android:scaleType="centerCrop"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/readboard_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="축제 이름"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/readboard_review1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="4dp"
+                    android:text="리뷰 1"
+                    android:padding="8dp"
+                    android:background="@drawable/review_background"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/readboard_review2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="4dp"
+                    android:text="리뷰 2"
+                    android:padding="8dp"
+                    android:background="@drawable/review_background"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/readboard_review3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:text="리뷰 3"
+                    android:padding="8dp"
+                    android:background="@drawable/review_background"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/readboard_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="위치/교통"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/readboard_parking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="주차"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/readboard_parking_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="주차 정보" />
+
+            <TextView
+                android:id="@+id/readboard_introdution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="축제 소개"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/readboard_introdution_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="축제 소개 내용" />
+
+            <Button
+                android:id="@+id/readboard_introdution_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="더보기"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="이용안내"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/readboard_information_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="이용안내 내용" />
+
+            <Button
+                android:id="@+id/readboard_information_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="더보기"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

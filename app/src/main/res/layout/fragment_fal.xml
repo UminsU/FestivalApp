@@ -28,7 +28,7 @@
                 android:id="@+id/fal_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="스크랩한 글 목록"
+                android:text="찜한 행사"
                 android:textSize="24sp"
                 android:textColor="@color/black"
                 android:paddingBottom="16dp" />
@@ -43,27 +43,63 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:padding="8dp">
 
-                    <ImageView
-                        android:id="@+id/fal_image"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/baseline_menu_24"
-                        android:layout_marginEnd="8dp"
-                        android:background="?attr/selectableItemBackground" />
-
-                    <TextView
-                        android:id="@+id/fal_text"
-                        android:layout_width="0dp"
+                    <!-- 첫 번째 행 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="스크랩된 글 제목 또는 내용"
-                        android:textSize="16sp"
-                        android:textColor="@color/black"
-                        android:paddingTop="8dp" />
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/fal_image1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_menu_24"
+                            android:layout_marginEnd="8dp"
+                            android:background="?attr/selectableItemBackground" />
+
+                        <TextView
+                            android:id="@+id/fal_text1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="남산벚꽃 축제"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:paddingTop="8dp" />
+                    </LinearLayout>
+
+                    <!-- 두 번째 행 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/fal_image2"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_menu_24"
+                            android:layout_marginEnd="8dp"
+                            android:background="?attr/selectableItemBackground" />
+
+                        <TextView
+                            android:id="@+id/fal_text2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="한강공원 벚꽃 축제"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:paddingTop="8dp" />
+                    </LinearLayout>
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 

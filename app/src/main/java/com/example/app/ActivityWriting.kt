@@ -104,8 +104,8 @@ class ActivityWriting : AppCompatActivity() {
     }
 }
 
-class DateViewModel {
+class ActivityDateViewModel {
     val year: Int = 2024
-    val month: Int = 5 // May (0-based index, so 4 means May)
+    val month: Int = 5
     val day: Int = 28
 }

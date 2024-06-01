@@ -17,20 +17,22 @@
         <LinearLayout
             android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:backgroundTint="@color/white"
-            android:gravity="top">
+            android:backgroundTint="#FF7171"
+            android:gravity="top"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/mypage_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:text="마이 페이지"
-                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
+                android:fontFamily="@font/cookie"
                 android:gravity="center"
+                android:text="마이 페이지"
+                android:textColor="#000000"
+                android:textSize="18sp"
                 tools:ignore="MissingConstraints" />
 
             <Button
@@ -38,36 +40,46 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="개인정보" />
+                android:backgroundTint="#FF7171"
+                android:fontFamily="@font/cookie"
+                android:text="개인정보"
+                />
 
             <Button
                 android:id="@+id/mywriting_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="내 글보기" />
+                android:backgroundTint="#FF7171"
+                android:fontFamily="@font/cookie"
+                android:text="내 찜목록" />
 
             <Button
                 android:id="@+id/myreview_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
+                android:backgroundTint="#FF7171"
+                android:fontFamily="@font/cookie"
                 android:text="내 리뷰보기" />
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
                 android:layout_marginTop="20dp"
                 android:text="(주최자)"
-                android:textSize="16dp"/>
+                android:textAlignment="center"
+                android:fontFamily="@font/cookie"
+                android:textSize="16dp" />
 
             <Button
                 android:id="@+id/myfestival_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
+                android:backgroundTint="#FF7171"
+                android:fontFamily="@font/cookie"
                 android:text="내 행사보기" />
         </LinearLayout>
 
@@ -98,21 +110,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="이름: 홍길동"
+                    android:text="이름: 소윤서"
                     android:textSize="18sp"
                     android:paddingBottom="8dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="이메일: hong@example.com"
+                    android:text="이메일: chanyoung@gmail.com"
                     android:textSize="18sp"
                     android:paddingBottom="8dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="전화번호: 010-1234-5678"
+                    android:text="전화번호: 010-3384-1824"
                     android:textSize="18sp"
                     android:paddingBottom="8dp" />
             </LinearLayout>
@@ -127,31 +139,27 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="내 글보기"
+                    android:text="내 찜목록"
                     android:textSize="24sp"
                     android:textColor="@color/black"
                     android:paddingBottom="16dp" />
 
                 <TextView
+                    android:id="@+id/myfal1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="내가 찜한 글 1"
+                    android:text="남산벚꽃축제"
                     android:textSize="18sp"
                     android:paddingBottom="8dp" />
 
                 <TextView
+                    android:id="@+id/myfal2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="내가 찜한 글 2"
+                    android:text="한강공원 벚꽃축제"
                     android:textSize="18sp"
                     android:paddingBottom="8dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="내가 찜한 글 3"
-                    android:textSize="18sp"
-                    android:paddingBottom="8dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -172,23 +180,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="내가 쓴 리뷰 1"
+                    android:text="작성된 리뷰가 없습니다"
                     android:textSize="18sp"
                     android:paddingBottom="8dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="내가 쓴 리뷰 2"
-                    android:textSize="18sp"
-                    android:paddingBottom="8dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="내가 쓴 리뷰 3"
-                    android:textSize="18sp"
-                    android:paddingBottom="8dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -207,25 +202,20 @@
                     android:paddingBottom="16dp" />
 
                 <TextView
+                    android:id="@+id/your_festival_text_view_id"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="내가 주최한 행사 1"
+                    android:text="삼육대 축제"
+                    android:textSize="18sp"
+                    android:paddingBottom="8dp" />
+                <TextView
+                    android:id="@+id/your_festival_text_view_id2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="종강 파티"
                     android:textSize="18sp"
                     android:paddingBottom="8dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="내가 주최한 행사 2"
-                    android:textSize="18sp"
-                    android:paddingBottom="8dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="내가 주최한 행사 3"
-                    android:textSize="18sp"
-                    android:paddingBottom="8dp" />
             </LinearLayout>
         </FrameLayout>
     </LinearLayout>
