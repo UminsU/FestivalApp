@@ -15,9 +15,7 @@ import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-
 import com.google.firebase.auth.FirebaseAuth
-
 
 class SubMainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
@@ -44,6 +42,9 @@ class SubMainActivity : AppCompatActivity() {
         findViewById<View>(R.id.google_sign_in_button).setOnClickListener {
             signIn()
         }
+
+        val auth = Firebase.auth
+        val user = auth.currentUser
     }
 
     private fun signIn() {
@@ -80,32 +81,5 @@ class SubMainActivity : AppCompatActivity() {
                     Toast.makeText(this, "Authentication Failed.", Toast.LENGTH_SHORT).show()
                 }
             }
-    }
-    class SubMainActivity : AppCompatActivity() {
-
-        private lateinit var mGoogleSignInClient: GoogleSignInClient
-        private lateinit var mAuth: FirebaseAuth
-
-
-
-
-        override fun onCreate(savedInstanceState: Bundle?) {
-            super.onCreate(savedInstanceState)
-            setContentView(R.layout.activity_main)
-
-            mAuth = FirebaseAuth.getInstance()
-
-
-            val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(getString(R.string.default_web_client_id))
-                .requestEmail()
-                .build()
-
-            mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
-
-            val auth = Firebase.auth
-            val user = auth.currentUser
-
-        }
     }
 }
